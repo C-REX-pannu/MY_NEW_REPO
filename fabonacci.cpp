@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
     int first, second, third, term, n;
+    system("cls");
     cout << "Enter the number: ";
     cin >> n;
     first = 0;
