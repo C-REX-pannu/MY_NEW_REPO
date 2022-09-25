@@ -1,20 +1,23 @@
+/*Program to print fabonacci series*/
+
 #include <conio.h>
 #include <iostream>
 #include <iomanip>
 
+using namespace std;
 int main()
 {
     int first, second, third, term, n;
-    std::cout << "Enter the number: ";
-    std::cin >> n;
+    cout << "Enter the number: ";
+    cin >> n;
     first = 0;
     second = 1;
     term = 2;
-    std::cout << first << second;
+    cout << first << second;
     third = first + second;
     while (term <= n)
     {
-        std::cout << third;
+        cout << third;
         first = second;
         second = third;
         third = first + second;
