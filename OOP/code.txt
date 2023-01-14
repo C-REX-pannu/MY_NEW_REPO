@@ -1,0 +1,28 @@
+#include <iostream>
+#include <fstream>
+
+int main()
+{
+    string user, pass, result;
+    clrscr();
+
+    string username = "SneakyMinds";
+    string password = "Sneaky@123";
+
+    cout<<"Enter the username : ";
+    cin>>user;
+    cout<<"Enter the password : ";
+    cin>>pass;
+
+    ifstream in("test.txt");
+    getline(in, result);
+
+    if(user == username && pass == password)
+        cout<<result;
+        else
+        {
+            cout<<"ACCESS DENIED!!!";
+        }
+    return 0;
+
+}
