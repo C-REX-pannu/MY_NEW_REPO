@@ -10,6 +10,7 @@ using namespace math_func;
 int main() {
     int a[5][5], b[5][5], sum[5][5];
     int r, c, r1, r2, c1, c2;
+    clrscr();
     
     
     cout<<"Enter the order of the firt matrix : ";
@@ -29,11 +30,11 @@ int main() {
     }
     
     cout<<"Enter the elements of the second matrix : "<<endl;
-    for(int i = 0; i < r1; i++)
+    for(int i = 0; i < r2; i++)
     {
-        for(int j = 0; j < c1; j++)
+        for(int j = 0; j < c2; j++)
         {
-            cin>>a[i][j];
+            cin>>b[i][j];
         }
     }
     
@@ -49,12 +50,13 @@ int main() {
             for(int j = 0; j < c; j++)
             {
                 sum[i][j] = a[i][j] + b[i][j];
-                cout<<sum[i][j];
+                cout<<sum[i][j]<<"\t";
             }
+            cout<<endl;
         }
     }
     else
-        cout<<"The Matrices are not compatible.";
+        cout<<"The matrices are not compatible.";
 
     return 0;
 }
