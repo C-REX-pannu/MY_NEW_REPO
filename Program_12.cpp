@@ -1,4 +1,4 @@
-//EXAM PURPOSE ONLY.
+// EXAM PURPOSE ONLY.
 
 #include <iostream>
 #include "../Libraries/my_lib.h"
@@ -13,23 +13,23 @@ int main()
     int time, year;
     clrscr();
 
-    cout<<"Enter the Principle amount, rate and the time : ";
-    cin>>pri>>rate>>time;
-    cout<<endl;
+    cout << "Enter the Principle amount, rate and the time : ";
+    cin >> pri >> rate >> time;
+    cout << endl;
 
     year = 1;
     princ_amt = pri;
 
-    while(year <= time)
+    while (year <= time)
     {
-        amt = pri * (1+rate/100);
+        amt = pri * (1 + rate / 100);
         pri = amt;
         year++;
     }
 
     ci = amt - princ_amt;
-    cout<<"The compound interest is : "<<ci<<endl;
-    cout<<"The Net amount is : "<<amt;
+    cout << "The compound interest is : " << ci << endl;
+    cout << "The Net amount is : " << amt;
 
     return 0;
 }
