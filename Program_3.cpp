@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 #include "../Libraries/my_lib.h"
 #include "../Libraries/my_lib.cpp"
 using namespace std;
@@ -7,20 +8,16 @@ using namespace math_func;
 
 int main()
 {
-    int daysTotal, days, months, years;
+    float s, s1, s2, s3, area;
     clrscr();
 
-    cout << "Enter the number of days : ";
-    cin >> daysTotal;
+    cout << "Enter the measure of the sides of the triangle : ";
+    cin >> s1 >> s2 >> s3;
 
-    years = daysTotal / 365;
-    daysTotal = daysTotal % 365;
-    months = daysTotal / 30;
-    days = daysTotal % 30;
+    s = (s1 + s2 + s3) / 2;
+    area = sqrt(s * (s - s1) * (s - s2) * (s - s3));
 
-    cout << "Years = " << years << endl
-         << "Months  = " << months << endl
-         << "Days = " << days;
+    cout << "The area of the triangle = " << area;
 
     return 0;
 }
