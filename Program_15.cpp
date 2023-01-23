@@ -10,8 +10,8 @@ int main()
     int num, fact;
     clrscr();
 
-    cout<<"Enter the number : ";
-    cin>>num;
+    cout << "Enter the number : ";
+    cin >> num;
 
     fact = 1;
 
@@ -19,9 +19,8 @@ int main()
     {
         fact = fact * i;
     }
-    
-    cout<<"The faactorial of "<<num<<" is "<<fact;
+
+    cout << "The faactorial of " << num << " is " << fact;
 
     return 0;
-
 }
